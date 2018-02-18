@@ -1,0 +1,31 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "init": {
+        "realization": "UuDemoappMain::Controllers::DemoController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "loadDemoContent": {
+        "realization": "UuDemoappMain::Controllers::DemoController.load_demo_content",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "home": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "withParams/{route}": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "defaultVuc": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      }
+    }
+  }
+}

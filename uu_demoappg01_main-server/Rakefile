@@ -1,0 +1,147 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__)+'/app')
+
+require 'rake/packagetask'
+require 'zip'
+require 'json'
+require 'versionomy'
+
+class ZipFileGenerator
+
+  # Initialize with the directory to zip and the location of the output archive.
+  def initialize(input_dir, output_file)
+    @input_dir = input_dir
+    @server_pack_file = output_file
+  end
+
+  # Zip the input directory.
+  def write
+    entries = Dir.entries(@input_dir); entries.delete("."); entries.delete('..')
+    io = Zip::File.open(@server_pack_file, Zip::File::CREATE)
+    write_entries(entries, '', io)
+    io.close
+  end
+
+  # A helper method to make the recursion work.
+  private
+  def write_entries(entries, path, io)
+    entries.each {|e|
+      zip_file_path = path == '' ? e : File.join(path, e)
+      disk_file_path = File.join(@input_dir, zip_file_path)
+
+      if disk_file_path.include?('/app') || disk_file_path.include?('/public') || disk_file_path.include?('/config') || disk_file_path.include?('Gemfile') || disk_file_path.include?('config.ru')
+        if File.directory?(disk_file_path)
+          io.mkdir("server/#{zip_file_path}")
+          subdir = Dir.entries(disk_file_path); subdir.delete('.'); subdir.delete('..')
+          write_entries(subdir, zip_file_path, io)
+        else
+          io.add("server/#{zip_file_path}", disk_file_path)
+        end
+      end
+    }
+  end
+
+end
+
+
+class DeploymentDescriptor
+  DEFAULT_DEPL_DESC = 'uucloud_descriptor.json'
+
+  attr_reader :version
+  attr_reader :deployment_desc_file
+  attr_reader :appbox_uri
+  attr_reader :deployment_descriptor_uri
+  attr_reader :server_pack_uri
+
+  def initialize(deployment_desc = DEFAULT_DEPL_DESC)
+    begin
+      @descriptor = JSON.parse(deployment_desc, symbolize_names: true)
+    rescue
+      @deployment_desc_file = deployment_desc
+      File.open(deployment_desc, 'r') do |f|
+        json = f.read
+        @descriptor = JSON.parse(json, symbolize_names: true)
+      end
+    end
+    @version = Versionomy.parse(@descriptor[:data][:version])
+  end
+
+  def parse_version(version)
+    @version = Versionomy.parse(version)
+  end
+
+  def bump_version
+    new_semver = nil
+    case @version.release_type
+      when :final
+        new_semver = @version.bump(:tiny)
+      when :alfa
+        new_semver = @version.bump(:alfa_version)
+      when :beta
+        new_semver = @version.bump(:beta_version)
+      else
+        raise "Unknown release type in version #{@version.to_s}"
+    end
+    @version = new_semver
+    save
+    @version
+  end
+
+  def save
+    @descriptor[:data][:version] = @version.to_s
+    File.open(@deployment_desc_file, 'w') do |f|
+      f.write(JSON.pretty_generate(@descriptor))
+    end
+  end
+
+  def product
+    code = @descriptor[:data][:code]
+    code.gsub(/\./, '-').downcase
+  end
+
+  def product_module
+    codes = @descriptor[:data][:code].split('.')
+    camel = codes.map do |code|
+      camel_code = code.downcase
+      camel_code = camel_code[0].upcase + camel_code[1..-1]
+      camel_code
+    end
+    camel.join
+  end
+
+
+  def data
+    @descriptor[:data]
+  end
+end
+
+namespace :uuapps do
+
+  desc 'Create target package of application.'
+  task :package do
+    target_dir = 'target'
+
+    client_dir = File.dirname(__FILE__).gsub('-server', '') + '-client'
+    puts client_dir
+
+    if Dir.exists?(client_dir)
+      Dir.chdir(client_dir) {
+        system('npm install')
+        system('npm run dist')
+      }
+    end
+
+    Dir.mkdir(target_dir) unless File.exists?(target_dir)
+
+    @descriptor = DeploymentDescriptor.new
+    @server_pack_file = "#{target_dir}/#{@descriptor.product}-server-#{@descriptor.version.to_s}.zip"
+    File.delete(@server_pack_file) if File.exists?(@server_pack_file)
+
+    zip = ZipFileGenerator.new('.', @server_pack_file)
+    zip.write
+    puts "Generated target file #{@server_pack_file}"
+  end
+
+end
+
+task :default => 'uuapps:package'
+
