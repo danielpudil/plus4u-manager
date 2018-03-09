@@ -1,82 +1,70 @@
-module Plus4uSearchUserMain
+module Plus4uManagerMain
   module Errors
-    module Plus4uSearchUserError
+    module Plus4uManagerMainError
 
     end
   end
 end
 
-module Plus4uSearchUserMain::Errors::Plus4uSearchUserError
+module Plus4uManagerMain::Errors::Plus4uManagerMainError
+  module LoginErrors
+    UC_CODE = "#{Plus4uManagerMain::APP_CODE}/login"
 
-  module InitErrors
-    UC_CODE = "#{Plus4uSearchUserMain::APP_CODE}/init"
-
-    class InvalidDtoIn < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/invalidDtoIn"
-      MESSAGE = 'Invalid DtoIn'
-    end
-    class SysSetProfileFailed < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/sys/setProfileFailed"
-      MESSAGE = 'Create uuAppProfile failed.'
-    end
-    class Plus4uSearchUserExists  < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/plus4uSearchUserExists"
-      MESSAGE = 'uuObject plus4uSearchUser in active/initializing state already exists.'
-    end
-    class Plus4uSearchUserDaoCreateFailed  < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/plus4uSearchUserDaoCreateFailed"
-      MESSAGE = 'Create plus4uSearchUser by Dao create failed.'
-    end
-    class Plus4uSearchUserDaoUpdateFailed  < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/plus4uSearchUserDaoUpdateFailed"
-      MESSAGE = 'Setting state on plus4uSearchUser failed.'
-    end
-    class Plus4uSearchUserDaoCreateSchemaFailed  < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/plus4uSearchUserDaoCreateSchemaFailed"
-      MESSAGE = 'Create uuObject schema by uuObject DAO createSchema failed.'
-    end
-  end
-
-  module LoadEnvironmentErrors
-    UC_CODE = "#{Plus4uSearchUserMain::APP_CODE}/loadEnvironment"
-
-    class InvalidDtoIn < Plus4uSearchUserMain::Errors::BaseError
+    class InvalidDtoIn < Plus4uManagerMain::Errors::BaseError
       ERROR_CODE = "#{UC_CODE}/invalidDtoIn"
       MESSAGE = 'Invalid DtoIn.'
     end
-    class Plus4uSearchUserDoesNotExist < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/plus4uSearchUserDoesNotExist"
-      MESSAGE = 'Get plus4uSearchUser by plus4uSearchUser Dao get by Awid failed.'
-    end
-    class Plus4uSearchUserInvalidState < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/plus4uSearchUserInvalidState"
-      MESSAGE = 'uuObject plus4uSearchUser is not in active state.'
+    class InvalidCredentials < Plus4uManagerMain::Errors::BaseError
+      ERROR_CODE = "#{UC_CODE}/invalidCredentials"
+      MESSAGE = 'Invalid credentials.'
     end
   end
 
-  module UpdateAppListErrors
-    UC_CODE = "#{Plus4uSearchUserMain::APP_CODE}/updateAppList"
+  module ListActivitiesErrors
+    UC_CODE = "#{Plus4uManagerMain::APP_CODE}/login"
 
-    class InvalidDtoIn < Plus4uSearchUserMain::Errors::BaseError
+    class InvalidDtoIn < Plus4uManagerMain::Errors::BaseError
       ERROR_CODE = "#{UC_CODE}/invalidDtoIn"
       MESSAGE = 'Invalid DtoIn.'
     end
-    class Plus4uSearchUserDaoUpdateFailed  < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/plus4uSearchUserDaoUpdateFailed"
-      MESSAGE = 'Update plus4uSearchUser by plus4uSearchUser DAO updateByAwid failed.'
+    class InvalidCredentials < Plus4uManagerMain::Errors::BaseError
+      ERROR_CODE = "#{UC_CODE}/invalidCredentials"
+      MESSAGE = 'Invalid credentials.'
     end
   end
 
-  module ListClientsByCriteriaErrors
-    UC_CODE = "#{Plus4uSearchUserMain::APP_CODE}/listClientsByCriteria"
+  module SetStateErrors
+    UC_CODE = "#{Plus4uManagerMain::APP_CODE}/login"
 
-    class InvalidDtoIn < Plus4uSearchUserMain::Errors::BaseError
+    class InvalidDtoIn < Plus4uManagerMain::Errors::BaseError
       ERROR_CODE = "#{UC_CODE}/invalidDtoIn"
       MESSAGE = 'Invalid DtoIn.'
     end
-    class CallCmdFailed  < Plus4uSearchUserMain::Errors::BaseError
-      ERROR_CODE = "#{UC_CODE}/callCmdFailed"
-      MESSAGE = 'Failed to call command.'
+    class InvalidCredentials < Plus4uManagerMain::Errors::BaseError
+      ERROR_CODE = "#{UC_CODE}/invalidCredentials"
+      MESSAGE = 'Invalid credentials.'
+    end
+    class CannotSetState < Plus4uManagerMain::Errors::BaseError
+      ERROR_CODE = "#{UC_CODE}/cannotSetState"
+      MESSAGE = 'Cannot set state of activity.'
+    end
+  end
+
+  module FindPersonByParameters
+    UC_CODE = "#{Plus4uManagerMain::APP_CODE}/findPersonByParameters"
+
+    class InvalidDtoIn < Plus4uManagerMain::Errors::BaseError
+      ERROR_CODE = "#{UC_CODE}/invalidDtoIn"
+      MESSAGE = 'Invalid DtoIn.'
+    end
+  end
+
+  module SendMessageErrors
+    UC_CODE = "#{Plus4uManagerMain::APP_CODE}/sendMessage"
+
+    class InvalidDtoIn < Plus4uManagerMain::Errors::BaseError
+      ERROR_CODE = "#{UC_CODE}/invalidDtoIn"
+      MESSAGE = 'Invalid DtoIn.'
     end
   end
 end

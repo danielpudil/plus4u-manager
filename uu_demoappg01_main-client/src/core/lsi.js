@@ -4,7 +4,7 @@ import "uu5g04-bricks";
 
 const Lsi = {
   appName: {
-    cs: "Šablona uuApp",
+    cs: "Plus4U Manager",
     en: "uuApp Template"
   },
 

@@ -300,7 +300,7 @@ For Visual Studio Code:
         "url": "http://localhost:1234/vendor-app-subapp/0-0/",
         "webRoot": "${workspaceRoot}/uu_demoappg01_main-client/src",
         "pathMapping": {
-          "/vendor-app-subapp/0-0/public/0.1.0/": "${workspaceRoot}/uu_demoappg01_main-server/public/"
+          "/vendor-app-subapp/0-0/public/0.1.0/": plus4u_managerg01_main-server
         },
         "sourceMapPathOverrides": {
           "webpack:///src/*": "${webRoot}/*"

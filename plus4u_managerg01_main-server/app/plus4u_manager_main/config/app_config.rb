@@ -1,4 +1,4 @@
-module Plus4uSearchUserMain
+module Plus4uManagerMain
   module Config
 
     # Module for application wise configurations

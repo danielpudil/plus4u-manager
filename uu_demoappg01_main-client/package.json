@@ -149,5 +149,13 @@
   },
   "prettier": {
     "printWidth": 120
-  }
+  },
+  "name": "plus4u_managerg01",
+  "code": "PLUS4U.MANAGERG01",
+  "namespace": "UU.Plus4UManager",
+  "version": "0.1.0",
+  "description": "Project template for developing UAF application with uu5.",
+  "vendor": "Unicorn College",
+  "license": "Licence Commercial",
+  "template": "uu5-ruby-1.9.0"
 }

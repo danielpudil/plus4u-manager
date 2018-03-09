@@ -1,7 +1,7 @@
-module Plus4uSearchUserMain
+module Plus4uManagerMain
   module Errors
     class BaseError < UuApp::AppServer::Error::UseCaseError
-      CODE_PREFIX = "#{Plus4uSearchUserMain::PRODUCT}"
+      CODE_PREFIX = "#{Plus4uManagerMain::PRODUCT}"
 
       def initialize(dto_out, param_map = {})
         super(self.class::MESSAGE)
