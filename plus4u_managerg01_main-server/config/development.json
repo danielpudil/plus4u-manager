@@ -1,0 +1,12 @@
+{
+  "uuSubAppDataStoreMap": {
+    "primary": "mongodb://127.0.0.1:27017/Plus4UManagerMainOS",
+    "binary": "mongodb://127.0.0.1:27017/Plus4UManagerMainBS"
+  },
+  "privilegedUserMap": {
+    "uuSubAppInstanceSysOwner": "4-3083-1"
+  },
+  "tid": "00000000000000000000000000000000",
+  "asid": "00000000000000000000000000000001",
+  "response_timeout" : 30
+}

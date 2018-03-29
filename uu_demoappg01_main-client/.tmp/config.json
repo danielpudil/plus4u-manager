@@ -1,0 +1,92 @@
+{
+  "useCdn": true,
+  "dependencies": {
+    "systemjs": {
+      "main": "system.src.js",
+      "baseUri": "https://cdn.plus4u.net/libs/systemjs/0.19.47/"
+    },
+    "react": {
+      "baseUri": "https://cdn.plus4u.net/libs/react/16.0.0/",
+      "main": "react.js"
+    },
+    "react-dom": {
+      "baseUri": "https://cdn.plus4u.net/libs/react-dom/16.0.0/",
+      "main": "react-dom.js"
+    },
+    "create-react-class": {
+      "baseUri": "https://cdn.plus4u.net/libs/create-react-class/15.6.0/",
+      "main": "create-react-class.js"
+    },
+    "prop-types": {
+      "baseUri": "https://cdn.plus4u.net/libs/prop-types/15.6.0/",
+      "main": "prop-types.js"
+    },
+    "uu5g04": {
+      "baseUri": "https://cdn.plus4u.net/uu-uu5g04/1.8.0/",
+      "main": "uu5g04.js"
+    },
+    "uu5g04-bricks": {
+      "baseUri": "https://cdn.plus4u.net/uu-uu5g04/1.8.0/",
+      "main": "uu5g04-bricks.js"
+    },
+    "uu5g04-forms": {
+      "baseUri": "https://cdn.plus4u.net/uu-uu5g04/1.8.0/",
+      "main": "uu5g04-forms.js"
+    },
+    "uu_appg01_core": {
+      "baseUri": "https://cdn.plus4u.net/uu-appg01-core/3.2.2/",
+      "main": "uu_appg01_core.js"
+    },
+    "uu_appg01": {
+      "main": "uu_appg01-base.js",
+      "baseUri": "https://cdn.plus4u.net/uu-appg01/3.2.2/"
+    },
+    "uu_oidcg01": {
+      "baseUri": "https://cdn.plus4u.net/uu-oidcg01/3.2.3/",
+      "main": "uu_oidcg01.js"
+    },
+    "uu_plus4u5g01": {
+      "baseUri": "https://cdn.plus4u.net/uu-plus4u5g01/1.6.0/",
+      "main": "uu_plus4u5g01.js"
+    },
+    "uu_plus4u5g01-bricks": {
+      "baseUri": "https://cdn.plus4u.net/uu-plus4u5g01/1.6.0/",
+      "main": "uu_plus4u5g01-bricks.js"
+    },
+    "uu_plus4u5g01-app": {
+      "baseUri": "https://cdn.plus4u.net/uu-plus4u5g01/1.6.0/",
+      "main": "uu_plus4u5g01-app.js"
+    }
+  },
+  "isProductionBuild": false,
+  "useMockData": true,
+  "host": "0.0.0.0",
+  "port": 1234,
+  "https": false,
+  "autoOpenInBrowser": false,
+  "devServerAppBaseUrlPath": "",
+  "sourcePath": "src",
+  "outputPath": "public",
+  "minify": false,
+  "useSourceMaps": true,
+  "packs": [
+    {
+      "entryPoints": [
+        "index.js"
+      ]
+    },
+    {
+      "entryPoints": [
+        "loading.less"
+      ],
+      "outputFile": "loading.css"
+    }
+  ],
+  "appBaseUrlPath": "/",
+  "appAssetsRelativeUrlPath": "",
+  "aliases": {
+    "calls": "/Users/danielpudil/Documents/plus4u-managerg01/uu_demoappg01_main-client/test/mocks.js",
+    "ns": "/Users/danielpudil/Documents/plus4u-managerg01/uu_demoappg01_main-client/.tmp/ns.js",
+    "cssns": "/Users/danielpudil/Documents/plus4u-managerg01/uu_demoappg01_main-client/.tmp/cssns.less"
+  }
+}

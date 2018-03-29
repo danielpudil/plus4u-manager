@@ -1,0 +1,16 @@
+source 'http://rubygems.org'
+source 'http://gems.plus4u.net'
+
+UU_APP_VERSION = '~>3.0'
+APP_WORKSPACE = '~>3.0'
+
+gem 'uu_os'
+gem 'uu_digitalworkspace'
+gem 'plus4u_people'
+
+gem 'uu_appg01_server', UU_APP_VERSION
+gem 'uu_appg01_server-client', UU_APP_VERSION
+
+group :development do
+  gem 'uu_appg01_workspace-test', APP_WORKSPACE
+end

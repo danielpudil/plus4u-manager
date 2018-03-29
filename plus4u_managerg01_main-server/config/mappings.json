@@ -1,0 +1,71 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "init": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "login": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.login",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sendMessage": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.send_message",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "listActivities": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.list_activities",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "findPersonByParameters": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.find_person_by_parameters",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "setState": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.set_state",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "getActivityList": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.get_activity_list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "changeCredentials": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.change_credentials",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "createActivity": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.create_activity",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "test": {
+        "realization": "Plus4uManagerMain::Controllers::ManagerController.test",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "home": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "withParams/{route}": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "defaultVuc": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "VUC"
+      }
+    }
+  }
+}

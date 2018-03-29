@@ -1,0 +1,24 @@
+{
+  "schemaUri": "ues:SYSTEM:UU.OS/UUAPP-DEPLOY-SCHEMA-V2.1",
+  "data": {
+    "code": "UU.PLUS4UMANAGERG01.MAIN",
+    "name": "Plus4U Demo",
+    "version": "0.1.0",
+    "multitenant": true,
+    "packs": [
+      {
+        "code": "UU.PLUS4UMANAGERG01.MAIN/SERVER-PACK",
+        "targetNodeSets": [
+          "UU.PLUS4UMANAGERG01.MAIN/CMD-CONTAINER"
+        ]
+      }
+    ],
+    "nodeSets": [
+      {
+        "code": "UU.PLUS4UMANAGERG01.MAIN/CMD-CONTAINER",
+        "nodeSize": "G1_M",
+        "runtimeStack": "UU.OS9/UC_RUBY_STACK-V1.0"
+      }
+    ]
+  }
+}

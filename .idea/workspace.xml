@@ -1,12 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd56c9f1-fe54-4679-a9b3-a5cc43f29e33" name="Default" comment="added commands - listActivities, setState, sendMessage, findPersonByParameters">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main/helpers/app_helper.rb" />
+    <list default="true" id="cd56c9f1-fe54-4679-a9b3-a5cc43f29e33" name="Default" comment="added commands - getListActivities, createActivity, changeCredentials">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/assets/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/assets/logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/Gemfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/Gemfile.lock" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main/controllers/plus4u_manager_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main/dao/plus4u_manager_mongo_db.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main/models/plus4u_manager.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main/validation_types/plus4u_manager_types.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/app/version.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/config.ru" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/config/development.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/config/mappings.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/config/persistence.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/config/profiles.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/config/test.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/21353d8e3f1234314ffb.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/6ff5684c85f372774896.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/7b65d358c8d3be0509f2.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/callbacks/oidc-callback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/loading.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/test/data/loadDemoContent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/test/http-client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/test/mocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/public/uu5-environment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/run.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/uucloud_descriptor.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/.tmp/config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/.tmp/cssns.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/.tmp/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/.tmp/ns.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/.tmp/temp-0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/.tmp/uu5-environment.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/node_modules/uu5g04/dist-esm/assets/fonts/uubml-glyphicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/node_modules/uu5g04/dist-node/assets/fonts/uubml-glyphicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/node_modules/uu5g04/dist/assets/fonts/uubml-glyphicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/node_modules/uu5g04/dist/uu5g04-bricks.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/node_modules/uu_plus4u5g01/node_modules/uu5g04/dist-esm/assets/fonts/uubml-glyphicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/node_modules/uu_plus4u5g01/node_modules/uu5g04/dist-node/assets/fonts/uubml-glyphicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/node_modules/uu_plus4u5g01/node_modules/uu5g04/dist/assets/fonts/uubml-glyphicons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/node_modules/uu_plus4u5g01/node_modules/uu5g04/dist/uu5g04-bricks.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.0f4258a520c507831ee5.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.23db92f221ca2a3b63fc.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.26387b96b50e7ec29dde.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.2e2c0013a8f6f22546c5.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.3463f30009303ef48bcb.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.351a1526fcaf09068b54.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.361da0e2b2363259e5a4.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.449d261c4ddea884858b.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.52914e53e3a65cae0cde.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.625f26300a366bd4eaa7.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.8b19875f96457a7a73fe.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.a53d76bb42a954de28d7.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.b00353184fe1b458dce2.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.d58509c3abed3e708c19.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.e675f958de02f099fe9c.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.e88e75e26785186e450d.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0.f3f1d9b252ac1938317b.hot-update.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/0f4258a520c507831ee5.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/23db92f221ca2a3b63fc.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/26387b96b50e7ec29dde.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/2be57923dca92a392dc1.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/2e2c0013a8f6f22546c5.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/3463f30009303ef48bcb.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/351a1526fcaf09068b54.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/361da0e2b2363259e5a4.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/449d261c4ddea884858b.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/4bcbfd8dce7bf5907c8b.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/52914e53e3a65cae0cde.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/5704c315c8c2b905f59b.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/5772093206edaf04356b.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/625f26300a366bd4eaa7.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/6c46e4cbba388d2e7fb3.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/6ff5684c85f372774896.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/77b8baf11124a4991970.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/8b19875f96457a7a73fe.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/8cd2e64c2dc12318a269.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/a53d76bb42a954de28d7.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/aa79b9979227939ac87f.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/b00353184fe1b458dce2.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/b960c4dfc78887433146.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/bd70f629f1bc0188dc8d.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/c80540a37fc1528e0e29.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/callbacks/oidc-callback.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/d13a5e10684ad5252b48.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/d43052781d8aa4eeee6d.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/d58509c3abed3e708c19.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/d6946fd5048db1e999e4.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/e675f958de02f099fe9c.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/e88e75e26785186e450d.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/f3f1d9b252ac1938317b.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/faefb6a99a3e794e9a8d.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/fb4bb9efed74d5f125fc.hot-update.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/loading.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/test/data/loadDemoContent.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/test/http-client.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/test/mocks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/public/uu5-environment.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main/errors/plus4u_searchuser_error.rb" afterPath="$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main/errors/plus4u_searchuser_error.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uu_demoappg01_main-client/src/core/about.js" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/src/core/about.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uu_demoappg01_main-client/src/core/lsi.js" afterPath="$PROJECT_DIR$/uu_demoappg01_main-client/src/core/lsi.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +129,8 @@
       <file leaf-file-name="plus4u_manager.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main/models/plus4u_manager.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="296" column="26" lean-forward="false" selection-start-line="296" selection-start-column="26" selection-end-line="296" selection-end-column="26" />
+            <state relative-caret-position="359">
+              <caret line="301" column="25" lean-forward="true" selection-start-line="301" selection-start-column="25" selection-end-line="301" selection-end-column="25" />
               <folding>
                 <element signature="e#10137#11558#0" expanded="false" />
               </folding>
@@ -534,7 +633,7 @@
       <workItem from="1522139523749" duration="1302000" />
       <workItem from="1522257284679" duration="1532000" />
       <workItem from="1522315282784" duration="3618000" />
-      <workItem from="1522331290675" duration="7516000" />
+      <workItem from="1522331290675" duration="7789000" />
     </task>
     <task id="LOCAL-00001" summary="added commands - listActivities, setState, sendMessage, findPersonByParameters">
       <created>1520633711756</created>
@@ -543,11 +642,18 @@
       <option name="project" value="LOCAL" />
       <updated>1520633711756</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added commands - getListActivities, createActivity, changeCredentials">
+      <created>1522359554083</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1522359554083</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115573000" />
+    <option name="totallyTimeSpent" value="115846000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -560,16 +666,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24878837" sideWeight="0.49392098" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936507" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22273426" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14746544" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22713415" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22713415" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23230769" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23170732" sideWeight="0.49676898" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35702747" sideWeight="0.506079" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -626,7 +732,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added commands - listActivities, setState, sendMessage, findPersonByParameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="added commands - listActivities, setState, sendMessage, findPersonByParameters" />
+    <MESSAGE value="added commands - getListActivities, createActivity, changeCredentials" />
+    <option name="LAST_COMMIT_MESSAGE" value="added commands - getListActivities, createActivity, changeCredentials" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1012,8 +1119,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/plus4u_managerg01_main-server/app/plus4u_manager_main/models/plus4u_manager.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="296" column="26" lean-forward="false" selection-start-line="296" selection-start-column="26" selection-end-line="296" selection-end-column="26" />
+        <state relative-caret-position="359">
+          <caret line="301" column="25" lean-forward="true" selection-start-line="301" selection-start-column="25" selection-end-line="301" selection-end-column="25" />
           <folding>
             <element signature="e#10137#11558#0" expanded="false" />
           </folding>
