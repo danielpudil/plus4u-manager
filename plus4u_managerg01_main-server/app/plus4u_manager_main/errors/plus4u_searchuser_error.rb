@@ -67,5 +67,23 @@ module Plus4uManagerMain::Errors::Plus4uManagerMainError
       MESSAGE = 'Invalid DtoIn.'
     end
   end
+
+  module ChangeCredentialsErrors
+    UC_CODE = "#{Plus4uManagerMain::APP_CODE}/sendMessage"
+
+    class InvalidDtoIn < Plus4uManagerMain::Errors::BaseError
+      ERROR_CODE = "#{UC_CODE}/invalidDtoIn"
+      MESSAGE = 'Invalid DtoIn.'
+    end
+  end
+
+  module CreateActivityErrors
+    UC_CODE = "#{Plus4uManagerMain::APP_CODE}/createActivity"
+
+    class InvalidDtoIn < Plus4uManagerMain::Errors::BaseError
+      ERROR_CODE = "#{UC_CODE}/invalidDtoIn"
+      MESSAGE = 'Invalid DtoIn.'
+    end
+  end
 end
 

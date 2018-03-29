@@ -68,10 +68,19 @@ export const About = createReactClass({
           leadingAuthors={authors.leadingAuthors}
           otherAuthors={authors.otherAuthors}
         />
+
+        <UU5.Bricks.Link
+          style={{margin: "auto", display: "table"}}
+          href="https://uuos9.plus4u.net/uu-dockitg01-main/78462435-484b1734d92a462b8fdc9451ec53619b/book"
+          content="Dokumentace +4U Manager"
+          target="_blank"
+        />
+
         <Plus4U5.App.Technologies
           technologies={this.getLsiItem(usedTechnologies.technologies)}
           content={this.getLsiItem(usedTechnologies.content)}
         />
+
       </UU5.Bricks.Section>
     );
   }

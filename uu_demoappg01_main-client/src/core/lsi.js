@@ -20,7 +20,7 @@ const Lsi = {
   },
 
   aboutHeader: {
-    cs: "O aplikaci uuDemoApp",
+    cs: "O aplikaci +4U Manager",
     en: "About application uuDemoApp"
   },
 
@@ -31,14 +31,14 @@ const Lsi = {
 
   aboutApp: {
     about: {
-      cs: "Demo aplikace je šablona pro vývoj nových aplikací.",
+      cs: "Aplikace +4U Manager je iOS aplikace pro efektivní správu aktivit v rámci celého Plus4U.",
       en: "Demo application is a template for developing new applications."
     },
     licence: {
       organisation: {
         cs: {
-          name: "Unicorn a.s.",
-          uri: "https://www.unicorn.com/"
+          name: "Unicorn College s.r.o.",
+          uri: "https://www.unicorncollege.cz/"
         },
         en: {
           name: "Unicorn a.s.",
@@ -49,51 +49,32 @@ const Lsi = {
     authors: {
       leadingAuthors: [
         {
-          name: "Name Surname",
+          name: "Daniel Pudil",
           role: (
             <UU5.Bricks.Lsi>
-              <UU5.Bricks.Lsi.Item language="cs">První autor</UU5.Bricks.Lsi.Item>
-              <UU5.Bricks.Lsi.Item language="en">First author</UU5.Bricks.Lsi.Item>
+              <UU5.Bricks.Lsi.Item language="cs">Vývojář</UU5.Bricks.Lsi.Item>
+              <UU5.Bricks.Lsi.Item language="en">Developer</UU5.Bricks.Lsi.Item>
             </UU5.Bricks.Lsi>
           )
         },
         {
-          name: "Name Surname",
+          name: "Peter Buchlák",
           role: (
             <UU5.Bricks.Lsi>
-              <UU5.Bricks.Lsi.Item language="cs">Druhý autor</UU5.Bricks.Lsi.Item>
-              <UU5.Bricks.Lsi.Item language="en">Second author</UU5.Bricks.Lsi.Item>
+              <UU5.Bricks.Lsi.Item language="cs">Konzultant</UU5.Bricks.Lsi.Item>
+              <UU5.Bricks.Lsi.Item language="en">Consultant</UU5.Bricks.Lsi.Item>
             </UU5.Bricks.Lsi>
           )
         }
       ],
       otherAuthors: [
-        {
-          name: "Name Surname",
-          role: (
-            <UU5.Bricks.Lsi>
-              <UU5.Bricks.Lsi.Item language="cs">Třetí autor</UU5.Bricks.Lsi.Item>
-              <UU5.Bricks.Lsi.Item language="en">Third author</UU5.Bricks.Lsi.Item>
-            </UU5.Bricks.Lsi>
-          )
-        },
-        {
-          name: "Name Surname",
-          role: (
-            <UU5.Bricks.Lsi>
-              <UU5.Bricks.Lsi.Item language="cs">Čtvrtý autor</UU5.Bricks.Lsi.Item>
-              <UU5.Bricks.Lsi.Item language="en">Fourth author</UU5.Bricks.Lsi.Item>
-            </UU5.Bricks.Lsi>
-          )
-        }
+
       ]
     },
     usedTechnologies: {
       technologies: {
         cs: [
           <UU5.Bricks.Link key="uaf" content="UAF" href="http://www.unicorn.com/" />,
-          <UU5.Bricks.Link key="uu5" content="uu5" href="http://www.unicorn.com/" />,
-          <UU5.Bricks.Link key="iot" content="uuIoT" href="http://www.unicorn.com/" />,
           <UU5.Bricks.Link key="app" content="uuAppServer" href="http://www.unicorn.com/" />
         ],
         en: []
